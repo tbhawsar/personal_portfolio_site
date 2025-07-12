@@ -27,18 +27,18 @@ export const QuoteSection: React.FC = () => {
       >
         <Text 
           variant="heading-default-l" 
-          onBackground="neutral-weak"
+          onBackground="neutral-strong"
           style={{ 
             lineHeight: '1.5',
             maxWidth: '700px',
-            opacity: 0.5,
+            opacity: 0.8,
             position: 'relative',
           }}
         >
           <span style={{ 
             fontSize: '4rem', 
-            color: 'var(--neutral-on-background-weak)', 
-            opacity: 0.3,
+            color: 'var(--neutral-on-background-strong)', 
+            opacity: 0.4,
             position: 'absolute',
             left: '-4rem',
             top: '-2rem',
@@ -46,11 +46,11 @@ export const QuoteSection: React.FC = () => {
           }}>
             "
           </span>
-          I believe the era of <span style={{ fontSize: '1.2em', fontWeight: '600', color: 'var(--brand-on-background-weak)', opacity: 0.8 }}>AI</span> is here to stay and will shape human progress in a phenomenal way. I want to work at the <span style={{ fontSize: '1.2em', fontWeight: '600', color: 'var(--brand-on-background-weak)', opacity: 0.8 }}>forefront</span> of this change to ensure we do it right.
+          I believe the era of <span style={{ fontSize: '1.2em', fontWeight: '600', color: 'var(--brand-on-background-weak)', opacity: 0.8 }}>AI</span> is here to stay and will shape human progress in a phenomenal way. I want to work at the <span style={{ fontSize: '1.2em', fontWeight: '600', color: 'var(--brand-on-background-weak)', opacity: 0.8 }}>forefront</span> of this change to help do it right.
           <span style={{ 
             fontSize: '4rem', 
-            color: 'var(--neutral-on-background-weak)', 
-            opacity: 0.3,
+            color: 'var(--neutral-on-background-strong)', 
+            opacity: 0.4,
             position: 'absolute',
             right: '-4rem',
             bottom: '-2rem',
