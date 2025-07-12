@@ -1,0 +1,58 @@
+---
+title: "RAG API Project: Retrieval-Augmented Generation Pipeline"
+publishedAt: "2025-07-07"
+summary: "A LangChain-powered RAG pipeline that enhances LLMs with external knowledge retrieval, exposed as an API and web interface."
+images:
+  - "/images/projects/rag_api_project/rag_api_project_01-doc-ingest.mp4"
+  - "/images/projects/rag_api_project/rag_api_project_02 - query.mp4"
+  - "/images/projects/rag_api_project/rag_api_project_02 - query.mp4"
+team:
+  - name: "Tilak Bhawsar"
+    role: "AI Software Engineer"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/tilakbhawsar/"
+link: "http://54.209.156.134:8501/"
+---
+
+## Overview
+
+**rag_api_project** is a Retrieval-Augmented Generation (RAG) pipeline designed to enhance the capabilities of large language models (LLMs) by integrating external knowledge sources into the generation process. Built using the LangChain framework, this project enables more accurate and context-aware responses by retrieving relevant information from custom data sources before generating answers.
+
+## Key Features
+
+- **Retrieval-Augmented Generation (RAG):** Combines the power of LLMs with external data retrieval, allowing the model to ground its responses in up-to-date or domain-specific information.
+- **LangChain Integration:** Utilizes the LangChain library to orchestrate the retrieval and generation steps, making it easy to connect LLMs with various data sources and retrieval strategies.
+- **API-First Design:** Exposes the RAG pipeline as a web API, enabling easy integration with other applications, frontends, or automation workflows.
+- **Custom Data Support:** Allows ingestion and retrieval from your own documents, databases, or knowledge bases, making it suitable for enterprise, research, or personal use cases.
+- **Flexible Deployment:** Can be run locally or deployed to cloud infrastructure, with a web interface available at [http://54.209.156.134:8501/](http://54.209.156.134:8501/).
+
+## Typical Workflow
+
+1. **User Query:** A user submits a question or prompt to the API/web interface.
+2. **Document Retrieval:** The system searches its indexed knowledge base for the most relevant documents or passages using semantic search.
+3. **Contextual Generation:** The retrieved context is passed to the LLM (via LangChain), which generates a response grounded in the retrieved information.
+4. **Response Delivery:** The answer, along with supporting context, is returned to the user.
+
+## Technologies Used
+
+- **LangChain:** For chaining together retrieval and generation steps, using the LCEM history aware retrieval framework to maintain chat memory.
+- **OpenAI LLMs & Embeddings:** For natural language understanding, response generation and initial token vectorisation/embedding generation.
+- **FAISS Vector Database:** For efficient semantic search and retrieval.
+- **FastAPI:** For serving the backend API and query/ingestion endpoints for POST/GET requests.
+- **Streamlit:** For serving the web interface (frontend UI) to enable a smooth UX.
+- **Docker-Compose:** For containerising the dependancies into an easily transferrable packaged environment.
+- **AWS EC2:** For hosting the entire app (frontend/backend) online in a secure and accessible way.
+
+## Use Cases
+
+- **Enterprise Q&A:** Provide employees with instant, accurate answers from internal documentation.
+- **Research Assistants:** Summarize and answer questions using a curated set of academic papers or reports.
+- **Customer Support:** Automate responses using a knowledge base of product manuals and FAQs.
+
+---
+
+**Live Demo:**  
+You can interact with the project at [http://54.209.156.134:8501/](http://54.209.156.134:8501/)
+
+**Source Code:**  
+Full details, code and setup instructions are available [on GitHub](https://github.com/tbhawsar/rag_api_project). Read the README to start at: [GitHub README](https://github.com/tbhawsar/rag_api_project/blob/main/README.md). 
