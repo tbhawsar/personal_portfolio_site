@@ -35,43 +35,45 @@ export const QuoteSection: React.FC = () => {
             opacity: 0.8,
             position: 'relative',
             padding: '0 2rem',
-            overflow: 'hidden',
+            overflow: 'visible',
             fontSize: 'clamp(1.1rem, 3.5vw, 1.8rem)',
             display: 'inline-block',
           }}
         >
           {/* Mobile quote mark open */}
           <span className="mobile-quote-mark">“</span>
-          <span
+          {/* Desktop quote mark open */}
+          <span 
+            className="desktop-quote-mark"
             style={{
-              fontSize: '4rem',
+              fontSize: '9rem',
               color: 'var(--neutral-on-background-strong)',
-              opacity: 0.4,
+              opacity: 0.13,
               position: 'absolute',
-              left: '-4rem',
-              top: '-2rem',
+              left: '-6.5rem',
+              top: '-5.5rem',
               fontFamily: 'Charter, "Bitstream Charter", serif',
             }}
-            className="desktop-quote-mark"
           >
-            "
+            “
           </span>
           <span className={`quote-fade${show ? ' show' : ''}`}>
             I believe the era of <span style={{ fontSize: '1.2em', fontWeight: '600', color: 'var(--brand-on-background-weak)', opacity: 0.8 }}>AI</span> is here to stay and will shape human progress in a phenomenal way. I want to work at the <span style={{ fontSize: '1.2em', fontWeight: '600', color: 'var(--brand-on-background-weak)', opacity: 0.8 }}>forefront</span> of this change to help do it right.
           </span>
-          <span
+          {/* Desktop quote mark close */}
+          <span 
+            className="desktop-quote-mark"
             style={{
-              fontSize: '4rem',
+              fontSize: '9rem',
               color: 'var(--neutral-on-background-strong)',
-              opacity: 0.4,
+              opacity: 0.13,
               position: 'absolute',
-              right: '-4rem',
-              bottom: '-2rem',
+              right: '-6.5rem',
+              bottom: '-5.5rem',
               fontFamily: 'Charter, "Bitstream Charter", serif',
             }}
-            className="desktop-quote-mark"
           >
-            "
+            ”
           </span>
           {/* Mobile quote mark close */}
           <span className="mobile-quote-mark">”</span>
