@@ -17,11 +17,25 @@
     .position {
         top: auto;
         position: fixed;
-        bottom: var(--static-space-24);
-    }
+        bottom: var(--static-space-32);
 
-    .mask {
-        transform: rotate(180deg);
-        bottom: 0;
+        // Make the mobile tab menu much narrower vertically
+        :global(.s-flex-show) {
+            min-width: 44px !important;
+            min-height: 36px !important;
+            padding: 4px 6px !important;
+            font-size: 12px !important;
+            border-radius: 10px !important;
+
+            svg {
+                width: 18px !important;
+                height: 18px !important;
+            }
+
+            span {
+                font-size: 10px !important;
+                margin-top: 2px !important;
+            }
+        }
     }
 }
